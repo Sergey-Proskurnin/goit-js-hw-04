@@ -12,17 +12,56 @@
 //     4 * fact(3)
 //         3 * fact(2)
 //             2
-// let fibonArray = []
-const fibon = (num) => {
+let fibonArray = []
+const fibon = num => {
   if (num <= 1) {
     return num;
   }
 
   return fibon(num - 1) + fibon(num - 2);
+  
 };
 
 const fibonOf = fibon(8);
-  console.log(fibonOf);
+console.log(fibonOf);
+
+const fibonArray = number => {
+  let arr = []
+  for (let i = 1; i <= number; i += 1) {
+      arr.push(fibon(i))
+   console.log(i);
+   
+       } 
+ return arr
+};
+console.log(fibonArray(8));
+
+
+// let fibonArray = [];
+// const fibon = num => {
+//   let arr = [];
+
+//   for (let i = 1; i <= num; i += 1) {
+//     if (num <= 1) {
+//       return num;
+//     }
+    
+//     arr.push(fibon(num - 1) + fibon(num - 2));
+   
+//   }
+// return arr;
+// }
+
+//   const fibonOf = fibon(8);
+//   console.log(fibonOf);
+
+// const someFunc = (n) => {
+//   if(n <= 1) {
+//     return n
+//   }
+//   return n + someFunc(n + 1)
+// }
+// console.log(someFunc(8));
 //   console.log(fibonArray);
 
 // const user = {
